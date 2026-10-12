@@ -11,7 +11,8 @@
 
 ## Структура проекта
 
-- `bench_sim/__main__.py` — точка запуска, собирающая слои приложения.
+- `bench_sim/__main__.py` — точка входа для команды `python -m bench_sim`; вызывает `main()`.
+- `bench_sim/main.py` — сборка компонентов симулятора и выбор графического или консольного интерфейса.
 - `bench_sim/hal.py` — контракт HAL и его реализация `MemoryHAL`.
 - `bench_sim/logic/controller.py` — конечный автомат и логика таймаутов.
 - `bench_sim/data/settings.py` — SQLite-репозиторий и проверка настроек.
